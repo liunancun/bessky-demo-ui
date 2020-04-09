@@ -5,11 +5,23 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    sidebar: {
+      opened: true
+    }
   },
   mutations: {
+    TOGGLE_SIDEBAR: state => {
+      state.sidebar.opened = !state.sidebar.opened
+    }
   },
   actions: {
+    toggleSideBar({ commit }) {
+      commit('TOGGLE_SIDEBAR')
+    }
   },
   modules: {
+  },
+  getters: {
+    sidebar: state => state.sidebar
   }
 })
