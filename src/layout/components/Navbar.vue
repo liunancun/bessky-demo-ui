@@ -9,6 +9,12 @@
         />
       </svg>
     </div>
+    <el-breadcrumb separator="/">
+      <el-breadcrumb-item>系统首页</el-breadcrumb-item>
+      <el-breadcrumb-item>账号管理</el-breadcrumb-item>
+      <el-breadcrumb-item>Lazada</el-breadcrumb-item>
+      <el-breadcrumb-item>账号列表</el-breadcrumb-item>
+    </el-breadcrumb>
     <el-dropdown trigger="click">
       <div class="avatar">
         <img src="https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif?imageView2/1/w/80/h/80" />
@@ -57,6 +63,13 @@ export default {
       height: 20px;
       transform: rotate(180deg);
     }
+  }
+
+  .el-breadcrumb {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 8px;
   }
 
   .el-dropdown {
